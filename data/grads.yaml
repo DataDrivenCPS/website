@@ -1,0 +1,13 @@
+images:
+  - src: "images/krish_dp.png"
+    alt: "Sowndarya Krishnan"
+    caption: "Sowndarya Krishnan"
+    link: "#"
+  - src: "images/aviaanwar.jpg"
+    alt: "Avia Anwar"
+    caption: "Avia Anwar"
+    link: "https://aviaanwar.github.io"
+  - src: "images/mete.jpg"
+    alt: "Mete Saka"
+    caption: "Mete Saka"
+    link: "#"

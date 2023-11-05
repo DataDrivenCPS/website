@@ -1,0 +1,13 @@
+{{- $dataDir := .Get "dataDir" -}}
+<div class="gallery-grid">    
+{{ with index site.Data $dataDir }}
+        {{ range .images }}
+        <div class="gallery-item">
+            {{ $image := resources.Get .src }}
+            <img src="{{ $image.RelPermalink }}" alt="{{ .alt }}" />
+            <div class="caption"><a href="{{ .link }}" target="_blank">{{ .caption }}</a></div>
+        </div>
+        {{ end }}
+    {{ end }}
+</div>
+

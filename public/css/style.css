@@ -33,7 +33,6 @@ code { background: #f9f9f9; }
 pre code { background: none; }
 
 /* misc elements */
-img, iframe, video { max-width: 100%; }
 main { hyphens: auto; }
 blockquote {
   background: #f9f9f9;
@@ -52,19 +51,22 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 
 .gallery-grid {
     display: grid;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
 .gallery-item img {
-    width: 100%;
+    width: 150px;
     height: auto;
 }
 
-.caption {
-    font-size: 0.8em;
-    text-align: center;
-    padding: 0.5em;
-    background: #eee;
-    border-radius: 5px;
+
+.gallery-item {
+    max-width: 150px;
 }
+.caption {
+    text-align: center;
+}
+

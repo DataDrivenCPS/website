@@ -1,0 +1,30 @@
+/* People galleries (faculty / graduate students) */
+.gallery-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 1.5rem 0;
+}
+
+.gallery-item {
+    max-width: 150px;
+}
+
+.gallery-item img {
+    width: 150px;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+.caption {
+    text-align: center;
+    margin-top: 0.4rem;
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

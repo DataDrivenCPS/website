@@ -1,15 +1,36 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://datadrivencps.github.io/website/'
 languageCode = 'en-us'
 title = 'Data-Driven Cyber-Physical Systems Lab'
-theme = 'xmin'
+theme = 'PaperMod'
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+
+[params]
+  description = "Advancing the state-of-the-art in (meta)data systems and data science for the built environment and cyber-physical contexts."
+  defaultTheme = "auto"        # auto | light | dark
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = false
+  ShowCodeCopyButtons = true
+  ShowToc = false
+  disableThemeToggle = false
+  hideFooter = false
 
 [menu]
-[[menu.main]]
-name = "Home"
-url = ""
-weight = 1
-
-[[menu.main]]
-name = "Papers"
-url = "papers/"
-weight = 2
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Papers"
+    url = "/papers/"
+    weight = 2
